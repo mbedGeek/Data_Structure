@@ -7,8 +7,8 @@ class Node(object):
         self.data = data
         self.child = {}
 
-class Trie(object):
-    def __init__(self, string):
+class Trie:
+    def __init__(self):
         self.head = Node(None)
         
     def insert(self, string):
@@ -49,3 +49,13 @@ class Trie(object):
             q += list(curr.child.values())
             
         return result
+
+trie = Trie()
+trie.insert("boy")
+trie.insert("boyage")
+trie.insert("bitcoin")
+trie.insert("cinnamon")
+trie.insert("good")
+trie.insert("go")
+trie.insert("god")
+print(trie.starts_with("bi"))
