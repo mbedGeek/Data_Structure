@@ -5,7 +5,7 @@ class Node(object):
     def __init__(self, key, data = None):
         self.key = key
         self.data = data
-        self.child = {}
+        self.child = {}    #dict()
 
 class Trie:
     def __init__(self):
@@ -58,4 +58,4 @@ trie.insert("cinnamon")
 trie.insert("good")
 trie.insert("go")
 trie.insert("god")
-print(trie.starts_with("bi"))
+print(trie.starts_with("b"))
