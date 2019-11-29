@@ -33,14 +33,14 @@ class SList(object):
         
     def appendleft(self, value):
         if self.is_empty():
-            self.head = Node(value, None)
+            self.head = Node(value)
         else:
             self.head = Node(value, self.head)
         self.size += 1
     
     def append(self, value):
         if self.is_empty():
-            self.head = Node(value, None)
+            self.head = Node(value)
             self.size += 1
         else:
             target = self.head
@@ -52,7 +52,7 @@ class SList(object):
         
     def insert(self, value, idx):
         if self.is_empty():
-            self.head = Node(value, None)
+            self.head = Node(value)
             self.size += 1
         elif idx == 0:
             self.head = Node(value, self.head)
