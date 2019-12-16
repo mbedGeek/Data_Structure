@@ -1,13 +1,13 @@
 #Trie 2
 
-import collections
+from collections import defaultdict
 
 
 class Node:
     def __init__(self, label=None, data=None):
         self.label = label
         self.data = data
-        self.children = collections.defaultdict(Trie)
+        self.children = defaultdict(Trie)
         self.NodeCount = 0
 
     def add_child(self, key, data=None):
