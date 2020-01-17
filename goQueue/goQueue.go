@@ -19,6 +19,7 @@ func (q *Queue) Pop() int {
 }
 
 func main() {
+	// Size of queue must be declared first
 	q := Queue{item: make(chan int, 5)}
 	q.Append(1)
 	q.Append(2)
