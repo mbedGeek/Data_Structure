@@ -1,7 +1,5 @@
-#Trie 2
-
+# Trie - Second Way to make Trie
 from collections import defaultdict
-
 
 class Node:
     def __init__(self, label=None, data=None):
