@@ -1,4 +1,5 @@
-#Trie Data Structure
+# Trie Data Structure
+
 from collections import deque
 
 class Node(object):
@@ -52,10 +53,4 @@ class Trie:
 
 trie = Trie()
 trie.insert("boy")
-trie.insert("boyage")
-trie.insert("bitcoin")
-trie.insert("cinnamon")
-trie.insert("good")
-trie.insert("go")
-trie.insert("god")
 print(trie.starts_with("b"))
